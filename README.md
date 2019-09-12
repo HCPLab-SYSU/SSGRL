@@ -8,10 +8,10 @@ Implementation of the paper: "[Learning Semantic-Specific Graph Representation f
 
 ## Environment
 Python 2.7
-Pytorch 1.0.1
+Pytorch 0.4.1
 Ubuntu 14.04 LTS
 
-## 
+
 
 ## Datasets
 [Microsoft COCO](http://cocodataset.org/#home) - 80 common object categories
@@ -22,13 +22,9 @@ Ubuntu 14.04 LTS
 
 [VisualGenome](https://visualgenome.org/) - subset of VG, covering 500 most common object categories
 
-### Data adn Models
-
-You can download the data files and our best models [here](https://pan.baidu.com/s/1OtPUX3QEbWkk6mYGv9fk1Q).
-
 
 ## Models && features && adjacency matrices
-waiting to be released
+You can download the data files and our best models [here](https://pan.baidu.com/s/1OtPUX3QEbWkk6mYGv9fk1Q)
 
 ## Usage
 git clone https://github.com/Mu-xsan/SSGRL.git
@@ -116,7 +112,7 @@ VisualGenome-500
         title={Learning Semantic-Specific Graph Representation for Multi-Label Image Recognition},
         author={Chen, Tianshui and Xu, Muxin and Hui, Xiaolu and Wu, Hefeng and Lin, Liang},
         journal={arXiv preprint arXiv:1908.07325},
-         year={2019}
+        year={2019}
     }
 
 
