@@ -2,8 +2,7 @@
 
 Implementation of the paper: "[Learning Semantic-Specific Graph Representation for Multi-Label Image Recognition](https://arxiv.org/abs/1908.07325)" (ICCV 2019) by Tianshui Chen, Muxin Xu, Xiaolu Hui, Hefeng Wu, Liang Lin.
 
-![Pipeline](./images/framework.png
-)
+
 ![Pipeline](./images//pipeline.png)
 
 
@@ -22,6 +21,11 @@ Ubuntu 14.04 LTS
 [Pascal VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) - 20 common object categories
 
 [VisualGenome](https://visualgenome.org/) - subset of VG, covering 500 most common object categories
+
+### Data adn Models
+
+You can download the data files and our best models [here](https://pan.baidu.com/s/1OtPUX3QEbWkk6mYGv9fk1Q).
+
 
 ## Models && features && adjacency matrices
 waiting to be released
@@ -109,12 +113,15 @@ VisualGenome-500
 
 ## Citation
 
-> @article{chen2019learning,
+ @article{chen2019learning,
   title={Learning Semantic-Specific Graph Representation for Multi-Label Image Recognition},
   author={Chen, Tianshui and Xu, Muxin and Hui, Xiaolu and Wu, Hefeng and Lin, Liang},
   journal={arXiv preprint arXiv:1908.07325},
   year={2019}
 }
+
+## Contributing
+For any questions, feel free to open an issue or contact us (tianshuichen@gmail.com & xumx7@mail2.sysu.edu.cn & huixlu@mail2.sysu.edu.cn)
 
 
 
