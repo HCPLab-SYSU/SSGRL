@@ -25,6 +25,7 @@ Ubuntu 14.04 LTS
 
 ## Models && features && adjacency matrices
 You can download the data files and our best models [here](https://pan.baidu.com/s/1OtPUX3QEbWkk6mYGv9fk1Q)
+password: ep6u
 
 ## Usage
 git clone https://github.com/Mu-xsan/SSGRL.git
