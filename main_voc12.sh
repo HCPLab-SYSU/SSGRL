@@ -8,13 +8,13 @@ LOG="log/finetune-81.8-`date +'%Y-%m-%d_%H-%M-%S'`"
 #   ./main.sh [post(any content to record the conducted experiment)]
 #LOG="log/bcnn.`date +'%Y-%m-%d_%H-%M-%S'`"
 #exec &> >(tee -a "$LOG")
-
+dataset='VOC2012'
 train_data_dir='./data/VOCdevkit/VOC2012/JPEGImages'
 train_list='./data/VOCdevkit/VOC2012/ImageSets/Main/trainval.txt'
 test_data_dir='./data/VOCdevkit/VOC2012/JPEGImages'
 test_list='./data/VOCdevkit/VOC2012/ImageSets/Main/test.txt'
 
-train_label='./'
+train_label='./data/VOCdevkit/VOC2012/Annotations'
 test_label='./'
 
 graph_file='./data/VOCdevkit/VOC2012/prob_trainval.npy'
@@ -61,6 +61,7 @@ fi
 # use multiple gpu (eg,gpu 0 and 1) to train
 #     CUDA_VISIBLE_DEVICES=0,1  
 CUDA_VISIBLE_DEVICES=$1 python main.py \
+    ${dataset} \
     ${train_data_dir} \
     ${test_data_dir} \
     ${train_list} \

@@ -25,14 +25,22 @@ def get_train_test_set(train_dir, test_dir, train_anno, test_anno, train_label=N
                                              transforms.ToTensor(),
                                              normalize])
     
-    #train_set = CoCoDataset(train_dir, train_anno, train_data_transform, train_label)
-    #test_set = CoCoDataset(test_dir, test_anno, test_data_transform, test_label)
-    #train_set = VGDataset(train_dir, train_anno, train_data_transform, train_label)
-    #test_set = VGDataset(test_dir, test_anno, test_data_transform, test_label)
-    #train_set = Voc07Dataset(train_dir, train_anno, train_data_transform, train_label)
-    #test_set = Voc07Dataset(test_dir, test_anno, test_data_transform, test_label)
-    train_set = Voc12Dataset(train_dir, train_anno, train_data_transform, train_label)
-    test_set = Voc12Dataset(test_dir, test_anno, test_data_transform, test_label)
+ 
+    if args.dataset == 'COCO':  
+        train_set = CoCoDataset(train_dir, train_anno, train_data_transform, train_label)
+        test_set = CoCoDataset(test_dir, test_anno, test_data_transform, test_label)
+    elif  args.dataset == 'VG':
+        train_set = VGDataset(train_dir, train_anno, train_data_transform, train_label)
+        test_set = VGDataset(test_dir, test_anno, test_data_transform, test_label)
+    elif args.dataset == 'VOC2007':
+        train_set = Voc07Dataset(train_dir, train_anno, train_data_transform, train_label)
+        test_set = Voc07Dataset(test_dir, test_anno, test_data_transform, test_label)
+    elif args.dataset == 'VOC2012':
+        train_set = Voc12Dataset(train_dir, train_anno, train_data_transform, train_label)
+        test_set = Voc12Dataset(test_dir, test_anno, test_data_transform, test_label)
+    else:
+        print('%s Dataset Not Found'%args.dataset)
+        exit(1)
     train_loader = DataLoader(dataset=train_set,
                               num_workers=args.workers,
                               batch_size=args.batch_size,

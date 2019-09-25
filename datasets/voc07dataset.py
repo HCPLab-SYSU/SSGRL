@@ -21,7 +21,7 @@ class Voc07Dataset(data.Dataset):
         with open(anno_path, 'r') as f:
              self.img_names = f.readlines()
         self.img_dir = img_dir
-        '''
+        
         self.labels = []
         for name in self.img_names:
             label_file = os.path.join(labels_path,name[:-1]+'.xml')
@@ -36,8 +36,6 @@ class Voc07Dataset(data.Dataset):
                 label_vector[int(category_info[tag])] = 1.0
             self.labels.append(label_vector)
         self.labels = np.array(self.labels).astype(np.float32)
-        '''
-        self.labels = np.ones((len(self.img_names),20))
         self.input_transform = input_transform
     def __getitem__(self, index):
         name = self.img_names[index][:-1]+'.jpg'
