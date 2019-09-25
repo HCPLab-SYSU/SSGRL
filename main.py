@@ -25,6 +25,8 @@ best_prec1 = 0
 
 def arg_parse():
     parser = argparse.ArgumentParser(description='PyTorch multi label Training')
+    parser.add_argument('dataset', metavar='DATASET',
+                        help='path to train dataset')
     parser.add_argument('train_data', metavar='DIR',
                         help='path to train dataset')
     parser.add_argument('test_data', metavar='DIR',
