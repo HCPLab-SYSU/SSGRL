@@ -109,11 +109,12 @@ VisualGenome-500
 |SSGRL|36.6|
 
 ## Citation
-    @article{chen2019learning,
-        title={Learning Semantic-Specific Graph Representation for Multi-Label Image Recognition},
-        author={Chen, Tianshui and Xu, Muxin and Hui, Xiaolu and Wu, Hefeng and Lin, Liang},
-        journal={arXiv preprint arXiv:1908.07325},
-        year={2019}
+    @inproceedings{chen2019learning,
+      title={Learning semantic-specific graph representation for multi-label image recognition},
+      author={Chen, Tianshui and Xu, Muxin and Hui, Xiaolu and Wu, Hefeng and Lin, Liang},
+      booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+      pages={522--531},
+      year={2019}
     }
 
 
