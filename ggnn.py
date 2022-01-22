@@ -39,7 +39,7 @@ class GGNN(nn.Module):
             zv = torch.sigmoid(self.fc_eq3_w(av) + self.fc_eq3_u(flatten_aog_nodes))
 
             # eq(4)
-            rv = torch.sigmoid(self.fc_eq4_w(av) + self.fc_eq3_u(flatten_aog_nodes))
+            rv = torch.sigmoid(self.fc_eq4_w(av) + self.fc_eq4_u(flatten_aog_nodes))
            
             #eq(5)
             hv = torch.tanh(self.fc_eq5_w(av) + self.fc_eq5_u(rv * flatten_aog_nodes))
