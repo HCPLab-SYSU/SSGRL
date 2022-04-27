@@ -116,6 +116,13 @@ VisualGenome-500
       pages={522--531},
       year={2019}
     }
+    @article{chen2020knowledge,
+      title={Knowledge-guided multi-label few-shot learning for general image recognition},
+      author={Chen, Tianshui and Lin, Liang and Hui, Xiaolu and Chen, Riquan and Wu, Hefeng},
+      journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+      year={2022},
+      publisher={IEEE}
+    }
 
 
 ## Contributing
