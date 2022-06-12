@@ -28,7 +28,7 @@ You can download the data files and our best models [here](https://pan.baidu.com
 password: ep6u
 
 ## Usage
-git clone https://github.com/Mu-xsan/SSGRL.git
+git clone https://github.com/HCPLab-SYSU/SSGRL.git
 
 cd SSGRL
 
